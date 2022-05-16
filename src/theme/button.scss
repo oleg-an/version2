@@ -1,0 +1,34 @@
+@import 'colors';
+
+.Btn {
+  height: 56px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.BtnPrimary {
+  border: none;
+  color: white;
+  background: $orangeDeep100;
+}
+
+.BtnSecondary {
+  border: none;
+  color: white;
+  background: $deepBlue100;
+}
+
+.BtnOutline {
+  background: transparent;
+  color: $deepBlue100;
+  border: 1px solid $black30;
+}
+
+.BtnSmall {
+  height: 36px;
+}

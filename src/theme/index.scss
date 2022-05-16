@@ -1,0 +1,24 @@
+@import './bootstrap-spacers';
+@import './breakpoints';
+
+@import 'button';
+@import 'input';
+@import 'colors';
+@import 'typography';
+@import 'a';
+@import 'background';
+
+@import "bootstrap/scss/bootstrap-grid";
+@import "bootstrap/scss/bootstrap-utilities";
+
+body {
+  overflow-x: hidden;
+  font-size: 14px;
+  line-height: 17px;
+  margin: 0;
+  font-family: 'Montserrat', serif;
+}
+
+* {
+  box-sizing: border-box;
+}

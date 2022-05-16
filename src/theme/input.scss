@@ -1,0 +1,108 @@
+@import 'colors';
+
+input[type=tel],
+input[type=text],
+input[type=number] {
+  height: 100%;
+  font-weight: 500;
+  font-size: 14px;
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-family: 'Montserrat', serif;
+  letter-spacing: 0.3px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.PrimaryInput {
+  background: white;
+  border-radius: 4px;
+}
+
+.SecondaryInput {
+  background: $deepBlue05;
+  border-radius: 4px;
+}
+
+textarea {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  font-family: 'Montserrat', serif;
+  outline: none;
+  resize: none;
+  border: 1px solid $black10;
+  border-radius: 8px;
+  padding: 16px 19px;
+}
+
+::-ms-clear {
+  display: none;
+}
+
+@mixin placeholder {
+  font-weight: 500;
+  color: $black100;
+  opacity: 1;
+}
+
+@mixin placeholder-focus {
+  color: transparent;
+}
+
+::-webkit-input-placeholder {
+  @include placeholder;
+}
+
+::-moz-placeholder {
+  opacity: 1;
+  @include placeholder;
+}
+
+:-moz-placeholder {
+  opacity: 1;
+  @include placeholder;
+}
+
+:-ms-input-placeholder {
+  @include placeholder;
+}
+
+input::placeholder {
+  @include placeholder;
+}
+
+input:focus::placeholder {
+  @include placeholder-focus;
+}
+
+input:focus::-webkit-input-placeholder {
+  @include placeholder-focus;
+}
+
+input:focus::-moz-placeholder {
+  @include placeholder-focus;
+}
+
+input:focus:-moz-placeholder {
+  @include placeholder-focus;
+}
+
+input:focus::placeholder {
+  @include placeholder-focus;
+}
+
+input::-ms-clear {
+  display: none;
+}

@@ -1,0 +1,6 @@
+.round {
+  border-radius: 8px !important;
+  @include media-breakpoint-up(xl) {
+    border-radius: 16px !important;
+  }
+}

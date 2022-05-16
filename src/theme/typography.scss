@@ -1,0 +1,155 @@
+@import './colors';
+
+.font-weight-medium {
+  font-weight: 500;
+}
+
+.font-weight-bolder {
+  font-weight: 600;
+}
+
+.font-weight-bold {
+  font-weight: 700;
+}
+
+.text-deepBlue100 {
+  color: $deepBlue100;
+}
+
+.text-red100 {
+  color: $red100;
+}
+
+.text-orangeDeep100 {
+  color: $orangeDeep100;
+}
+
+.text-orange {
+  color: $orange;
+}
+
+.text-black30 {
+  color: $black30;
+}
+
+.text-black10 {
+  color: $black10;
+}
+
+.text-deepBlue05 {
+  color: $deepBlue05;
+}
+
+.text-white {
+  color: $white;
+}
+
+.text-black50 {
+  color: $black50;
+}
+
+.text-black70 {
+  color: $black70;
+}
+
+@mixin h1-mixin {
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 48px;
+}
+
+@mixin h2-mixin {
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 36px;
+}
+
+@mixin h3-mixin {
+  font-size: 23px;
+  line-height: 32px;
+}
+
+@mixin h4-mixin {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@mixin h5-mixin {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+@mixin h6-mixin {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+h1 {
+  margin: 0;
+  @include h1-mixin;
+}
+
+h2 {
+  margin: 0;
+  @include h2-mixin;
+}
+
+h3 {
+  margin: 0;
+  @include h3-mixin;
+
+  @include media-breakpoint-up(xl) {
+    @include h2-mixin;
+  }
+}
+
+h4 {
+  margin: 0;
+  @include h4-mixin;
+  font-weight: 600;
+
+  @include media-breakpoint-up(xl) {
+    font-weight: 500;
+    @include h3-mixin;
+  }
+}
+
+h5 {
+  margin: 0;
+  @include h5-mixin;
+}
+
+h6 {
+  margin: 0;
+  @include h6-mixin;
+}
+
+.h0 {
+  font-weight: 600;
+  font-size: 48.0035px;
+  line-height: 64px;
+}
+
+.h1 {
+  @include h1-mixin;
+}
+
+.h2 {
+  @include h2-mixin;
+}
+
+.h3 {
+  @include h3-mixin;
+}
+
+.h4 {
+  @include h4-mixin;
+}
+
+.h5 {
+  @include h5-mixin;
+}
+
+.h6 {
+  @include h6-mixin;
+}
