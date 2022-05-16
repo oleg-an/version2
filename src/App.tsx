@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Route, Switch, useHistory } from 'react-router-dom';
-import './App.css';
+import './App.scss';
 import Auth from './pages/Auth';
 import { pageRoutes } from './routes';
 import { useGetProfile } from './api/auth';
